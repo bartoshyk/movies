@@ -27,3 +27,5 @@
   }
 }
 </style>
+<style src="./assets/styles/main.css">
+</style>
