@@ -1,8 +1,7 @@
 <template>
 
-  <div id="app">
+  <div class="quote flex justify-center  items-center w-1/2 text-white">
      <p>{{showRandomQuotes()}}</p>
-     <p>showRandomQuotes</p>
   </div>
 
 </template>
@@ -10,12 +9,9 @@
 <script>
 
 export default {
-  name: 'quote',
-}
-
- new Vue({
-el:'#app',
-            data:{
+        name:'quote',
+            data: function(){
+                return{
                 quotes:[
                         'Рискуя, мы продлеваем молодость, не так ли?(Волк с Уолл-стрит)',
                         'Вещи, которыми ты владеешь, в конечном итоге овладевают тобой.(Бойцовский клуб)',
@@ -30,6 +26,7 @@ el:'#app',
                         'Не признавать своих ошибок — самая опасная ошибка.(Двадцать одно)',
                         'Чтобы мир казался нормальным, надо быть сумасшедшим.(Алиса в стране чудес)'
                        ]
+                    }
             },
             methods:{
                 showRandomQuotes:function(){
@@ -38,5 +35,11 @@ el:'#app',
                 }
             }
 
-        })
+}
 </script>
+
+<style>
+.quote{
+ font-style: italic;
+}
+</style>
