@@ -1,11 +1,11 @@
 <template>
 <div>
-   <!-- <router-link :to="moviePath"> -->
+   <router-link :to="moviePath" class="no-underline text-black  hover:text-grey-darkest">
        <div>
            <img v-bind:src="posterPath" >
        </div>
        <div>{{ movie.title }}</div>
-   <!-- </router-link> -->
+   </router-link>
  </div>
 </template>
 

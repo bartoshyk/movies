@@ -1,7 +1,7 @@
 <template>
   <div class=" mx-auto flex flex-wrap justify-center w-5/6">
       <div v-if="!movies">Загрузка...</div>
-      <div class="m-2 flex flex-wrap" v-else v-for="movie in movies" :key="movie.id">
+      <div class="m-2 flex flex-wrap w-1/6 rounded overflow-hidden bg-grey-light pb-3 shadow" v-else v-for="movie in movies" :key="movie.id">
         <MoviesCard :movie="movie"> </MoviesCard>
       </div>
   </div>
